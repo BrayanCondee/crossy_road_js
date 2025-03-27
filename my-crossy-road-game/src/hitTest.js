@@ -14,7 +14,7 @@ export function hitTest() {
     playerBoundingBox.setFromObject(player);
 
     row.vehicles.forEach(({ ref }) => {
-      if (!ref) throw Error("Vehicle reference is missing");
+      if (!ref) throw Error("Vehicle reference is missing!");
 
       const vehicleBoundingBox = new THREE.Box3();
       vehicleBoundingBox.setFromObject(ref);
